@@ -19,9 +19,6 @@ class App extends React.Component {
 						id={friend.id}
 						name={friend.name}
 				        image={friend.image}
-				        occupation={friend.occupation}
-				        location={friend.location}
-
 	        		/>)
 	        
 		})}
