@@ -12,7 +12,15 @@ class App extends React.Component {
 	};
 
 	scoreIncrement = id =>{
-
+		this.state.friends.find((character, i) =>{
+			if(character.id===id){
+				if(friends[i].count===0){
+					friends[i].count = friends[i].count + 1;
+					this.setState({score: this.state.score + 1});
+					
+				}
+			}
+		})
 	}
 
 	render(){
